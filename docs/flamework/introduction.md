@@ -17,7 +17,7 @@ slug: /flamework
 - It automatically generates type guards for your [networking code](/docs/flamework/additional-modules/networking/creating-events) and [components](/docs/flamework/additional-modules/components/creating-a-component).
 - It has non-obtrusive [lifecycle events](/docs/flamework/guides/lifecycle-events), easy to opt-in to, but entirely optional.
 - It supports [dependency injection](/docs/flamework/guides/dependencies) via [constructor](/docs/flamework/guides/dependencies#dependency-injection) or via a [macro](/docs/flamework/guides/dependencies#dependency-macro).
-- It's designed to be extended, via the [modding API](/docs/flamework/modding/introduction). (wip)
+- It's designed to be extended, via the [modding API](/docs/flamework/modding/). (wip)
 - It splits parts of Flamework into several packages, so you only need to install what you wish to use.
 - It's designed to minimize boilerplate and preserve simplicity.
 

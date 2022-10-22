@@ -37,3 +37,21 @@ export class MyController implements OnRender {
 	}
 }
 ```
+
+## Load Order
+
+There are times you want to specify the order in which controllers & services load. That's where the **loadOrder** config comes in.
+
+The **default** is `1`. The **lower** the **loadOrder**, the **earlier** it'll load!
+
+```ts
+@Controller( {
+    loadOrder: 0 // Loads BEFORE all other controllers with default loadOrder
+})
+```
+
+```ts
+@Controller( {
+    loadOrder: 2 // Loads AFTER all other controllers with default loadOrder
+})
+```

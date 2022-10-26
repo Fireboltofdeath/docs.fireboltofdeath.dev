@@ -44,6 +44,8 @@ There are times you want to specify the order in which controllers & services lo
 
 The **default** is `1`. The **lower** the **loadOrder**, the **earlier** it'll load!
 
+This only affects **onInit**!
+
 ```ts
 @Controller( {
     loadOrder: 0 // Loads BEFORE all other controllers with default loadOrder

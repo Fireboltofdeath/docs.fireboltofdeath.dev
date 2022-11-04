@@ -57,7 +57,7 @@ module.exports = {
 						'flamework/additional-modules/components/scripting-api',
 						'flamework/additional-modules/components/attributes',
 						'flamework/additional-modules/components/inheritance',
-						'flamework/additional-modules/components/extra'
+						'flamework/additional-modules/components/configuration'
 					],
 				},
 			]

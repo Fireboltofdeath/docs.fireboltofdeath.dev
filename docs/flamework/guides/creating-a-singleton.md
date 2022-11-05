@@ -40,7 +40,7 @@ export class MyController implements OnRender {
 
 ## Load Order
 
-There are times you want to specify the order in which controllers & services load. That's where the **loadOrder** config comes in.
+There are times you want to specify the order in which singletons load. That's where the **loadOrder** config comes in.
 
 The **default** is `1`. The **lower** the **loadOrder**, the **earlier** it'll load!
 

@@ -20,6 +20,8 @@ The `instanceGuard` is similar to `predicate`, but serves a slightly different p
 
 * On the server, an error will be thrown if a component is attempted to be created, but the `instanceGuard` fails.
 * On the client, a connection will be created to wait for `DescendantsAdded` & `DescendantsRemoving` until the `instanceGuard` passes. This is because instances can be sent to the client in pieces and the whole thing might not have arrived yet.
+
+Note: Using `instanceGuard` will override the automatically generated guard, which is created when providing the `BaseComponent` with an Instance type!
 ```ts
 interface Guard extends Tool {
     Parent: Workspace
@@ -58,6 +60,8 @@ export class ExampleComponent extends BaseComponent<Attributes, Part> implements
 Specifies if the Component should update its `attributes` when `SetAttribute` is called on the Component after it has been created.
 
 If set to `false`, the Components attributes (`this.attributes.example`) will not be updated to the value set when using `SetAttribute`, after the Component has been created.
+
+Note: Setting `refreshAttributes` to false will disable the `onAttributeChanged` handlers!
 ```ts
 interface Attributes {
     amount: number

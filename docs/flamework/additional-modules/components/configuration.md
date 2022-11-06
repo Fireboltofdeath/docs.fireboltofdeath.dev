@@ -21,17 +21,11 @@ The `instanceGuard` is similar to `predicate`, but serves a slightly different p
 * On the server, an error will be thrown if a component is attempted to be created, but the `instanceGuard` fails.
 * On the client, a connection will be created to wait for `DescendantsAdded` & `DescendantsRemoving` until the `instanceGuard` passes. This is because instances can be sent to the client in pieces and the whole thing might not have arrived yet.
 
-Note: Using `instanceGuard` will override the automatically generated guard, which is created when providing the `BaseComponent` with an Instance type!
+Note: Using `instanceGuard` will override the automatically generated type guard, which is created when providing the `BaseComponent` with an Instance type!
 ```ts
-interface Guard extends Tool {
-    Parent: Workspace
-}
-
-const instanceGuard = Flamework.createGuard<Guard>()
-
 @Component( {
     tag: "Example",
-    instanceGuard: ( instance ): instance is Guard => instanceGuard(instance) && instance.Parent === Workspace,
+    instanceGuard: Flamework.createGuard<any>()
 } )
 export class ExampleComponent extends BaseComponent<> implements OnStart {}
 ```

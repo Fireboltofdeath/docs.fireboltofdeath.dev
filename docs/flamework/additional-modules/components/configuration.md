@@ -12,7 +12,7 @@ This only affects Components created via **CollectionService**!
     tag: "Example",
     predicate: ( instance ) => instance.FindFirstAncestorOfClass("PlayerGui") !== undefined,
 })
-export class ExampleComponent extends BaseComponent<> implements OnStart {}
+export class ExampleComponent extends BaseComponent implements OnStart {}
 ```
 
 ## Instance Guard
@@ -27,7 +27,7 @@ Note: Using `instanceGuard` will override the automatically generated type guard
     tag: "Example",
     instanceGuard: Flamework.createGuard<any>()
 } )
-export class ExampleComponent extends BaseComponent<> implements OnStart {}
+export class ExampleComponent extends BaseComponent<{}, Model> implements OnStart {}
 ```
 
 ## Defaults
@@ -46,6 +46,24 @@ interface Attributes {
     }
 } )
 export class ExampleComponent extends BaseComponent<Attributes, Part> implements OnStart {}
+```
+
+## Attributes
+You can use `attributes` to specify custom type guards for attributes defined in your Component's attribute interface.
+
+The example uses the [t package](https://www.npmjs.com/package/@rbxts/t) to specify the value of the `amount` attribute, which should only ever be a number between 1 and 5.
+```ts
+interface Attributes {
+    amount: number
+}
+
+@Component( {
+    tag: "Example",
+    attributes: {
+        amount: t.numberConstrained( 1, 5 )
+    }
+} )
+export class ExampleComponent extends BaseComponent<Attributes> implements OnStart {}
 ```
 
 ## Refresh Attributes

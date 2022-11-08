@@ -80,14 +80,18 @@ typeRoots: ["node_modules/@rbxts", "node_modules/@flamework"]
 Find the following json inside your `default.project.json`
 ```json
 "node_modules": {
-	"$path": "node_modules/@rbxts"
+	"@rbxts": {
+		"$path": "node_modules/@rbxts"
+	}
 }
 ```
 
 After you've found it, you'll want to replace it with the following json.
 ```json
 "node_modules": {
-	"$path": "node_modules/@rbxts",
+	"@rbxts": {
+		"$path": "node_modules/@rbxts"
+	},
 	"@flamework": {
 		"$path": "node_modules/@flamework"
 	}

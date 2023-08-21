@@ -12,7 +12,7 @@ Example use cases:
 You can use the `Networking.createEvent` macro to create your network handler. This will contain all your events for both server and client and you can also configure your [middleware](./middleware).
 
 It should be noted that you cannot return a value from an event and the return type on the interfaces will be ignored.
-If you want two way communcation then you should use [RemoteFunctions](./remote-functions).
+If you want two way communication then you should use [RemoteFunctions](./remote-functions).
 
 ```ts
 import { Networking } from "@flamework/networking";

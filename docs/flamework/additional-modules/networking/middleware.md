@@ -6,7 +6,7 @@ Middlewares are functions that get called before the listener to any event or fu
 
 Example use cases for middleware:
 * Stricter type checks (for types that can't be represented via TypeScript, e.g constrained numbers)
-* Ratelimiting (drop or delay requests that go over a certain threshold)
+* Rate limiting (drop or delay requests that go over a certain threshold)
 * Blocking unauthorized requests before they reach the listener
 * Logging
 

@@ -8,7 +8,7 @@ tags: [Release]
 
 ## Change Log
 
-This is a maintenance updating containg bug fixes, performance improvements and usability improvements.
+This is a maintenance update containing bug fixes, performance improvements and usability improvements.
 
 [@flamework/core](https://github.com/rbxts-flamework/core/commits/master)
 [@flamework/components](https://github.com/rbxts-flamework/components/commits/master)

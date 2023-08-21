@@ -5,7 +5,7 @@ Flamework's networking is designed with ease of use and convenience in mind.
 
 ## Features
 - [RemoteEvents](./remote-events)
-	- One way communcation between the server and client.
+	- One way communication between the server and client.
 - [RemoteFunctions](./remote-functions)
 	- Two way communication between the server and client.
 - [Middleware](./middleware)

@@ -3,7 +3,7 @@ title: Frequently Asked
 ---
 This is a compilation of frequently asked questions. If you have any question not listed here and you think it should be listed here, feel free to make a PR or ask in the roblox-ts discord.
 
-## When do I use [`OnInit`](./lifecycle-events#oninit) over [`OnStart`](./lifecycle-events#onstart)?
+## When do I use [`OnInit`](./guides/lifecycle-events#OnInit) over [`OnStart`](./guides/lifecycle-events#OnStart)?
 Flamework has two lifecycle events called during ignition: `OnInit` and `OnStart`. These events are similar but they serve two very distinct purposes.
 
 `OnInit` is called sequentially for every singleton in the order you define through `loadOrder`. If any singleton fails to `OnInit` then Flamework will abort ignition instead of trying to recover. It is not safe to use other dependencies in this event as they may not yet be initialized. Yielding in `OnInit` will also delay ignition.

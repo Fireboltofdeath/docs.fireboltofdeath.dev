@@ -56,4 +56,4 @@ print(map.get("B")); // Value1
 - Update description
 
 ### 1.0.0
-- Inital release
+- Initial release

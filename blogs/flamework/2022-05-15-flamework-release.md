@@ -36,7 +36,7 @@ author_image_url: https://avatars.githubusercontent.com/u/24422634?v=4
 - You can create custom lifecycle events.
 - Deferred dependency API allows you to delay the constructor of a class.
 - Decorators can request specific compile-time metadata.
-- Dependency resolution can be modified, extended or overriden.
+- Dependency resolution can be modified, extended or overridden.
 - You can add custom values into Flamework's default dependency resolution.
 	- `Modding.addDependency(Flamework.id<SomeType>(), objOfSomeType)`
 

@@ -47,7 +47,7 @@ Now that you have your project setup, it's time to install Flamework.
 #### Packages
 
 First off, you'll want to install the flamework library and transformer.
-```
+```bash
 npm i -D rbxts-transformer-flamework
 npm i @flamework/core
 ```
@@ -113,13 +113,13 @@ Before you can start writing code with Flamework, you'll have to install roblox-
 You can do this simply by running the following command in your project's directory.
 
 It is necessary to install `roblox-ts@next` until roblox-ts releases version 1.2.0
-```
+```bash
 npm i -D roblox-ts@next
 ```
 
 #### Build your project!
 It's time, you're ready to write some code. Simply run the following command in your project directory.
-```
+```bash
 npx rbxtsc -w
 ```
 
@@ -129,7 +129,7 @@ If you're not a fan of using a command, roblox-ts has a [vscode plugin](https://
 When it comes time to update the version of Flamework you are using, simply follow these steps.
 
 #### Update the packages
-```
+```bash
 npm i @flamework/core@latest
 npm i -D rbxts-transformer-flamework@latest
 ```

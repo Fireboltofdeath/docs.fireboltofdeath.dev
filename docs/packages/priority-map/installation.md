@@ -7,13 +7,13 @@ slug: /packages/priority-map
 
 `@rbxts/priority-map` is published on npm for use with roblox-ts.
 
-```
+```bash
 npm install @rbxts/priority-map
 ```
 
 ### GitHub
 You can install the latest (unreleased) version `@rbxts/priority-map` via GitHub.
-```
+```bash
 npm install github:FireTS/rbxts-priority-map
 ```
 

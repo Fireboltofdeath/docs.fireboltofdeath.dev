@@ -16,7 +16,7 @@ if (myComponent) {
 ```
 
 ## Adding/removing a component
-Similarily, if you'd like to add a component to a specific instance, you can use `Components.addComponent<T>(instance)`
+Similarly, if you'd like to add a component to a specific instance, you can use `Components.addComponent<T>(instance)`
 
 If you'd like to remove a component, you can use `Components.removeComponent<T>(instance)`
 

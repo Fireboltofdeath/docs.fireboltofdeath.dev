@@ -89,7 +89,7 @@ Events.function.invoke()
 		if (reason === NetworkingFunctionError.Timeout) {
 			warn("My request timed out!");
 		} else {
-			warn("A different error occured:", reason);
+			warn("A different error occurred:", reason);
 		}
 	})
 ```

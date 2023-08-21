@@ -23,7 +23,7 @@ author_image_url: https://avatars.githubusercontent.com/u/24422634?v=4
 - Components API now allows you to pass strings as the component specifier.
 - Components API now supports inheritance and implements.
 	- The new `getComponents<T>(instance)` API will get all components that implement or extend from T.
-	- The `getAllComponents<T>()` API will also get all components taht implement or extend from T.
+	- The `getAllComponents<T>()` API will also get all components that implement or extend from T.
 - Fixed a bug where onAttributeChanged would report an incorrect oldValue
 
 ## Previous Release

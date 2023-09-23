@@ -40,11 +40,16 @@ export class MyController implements OnRender {
 
 ## Load Order
 
-There are times you want to specify the order in which singletons load. That's where the **loadOrder** config comes in.
+:::info Dependency Injection
+When you use dependency injection, Flamework will automatically determine the correct load order for you, so it is recommended to avoid setting this manually.
 
-The **default** is `1`. The **lower** the **loadOrder**, the **earlier** it'll load!
+This property will take priority over Flamework's automatic order but singletons with the same load order will still run in the automatic order.
+:::
 
-`OnStart` & `OnInit` are both affected by this.
+
+You can use the `loadOrder` configuration to override the order that singletons will call `OnInit` and `OnStart`.
+
+The default `loadOrder` property defaults to `1` and decreasing the `loadOrder` causes the singleton to load earlier.
 
 ```ts
 @Controller( {

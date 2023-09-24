@@ -40,7 +40,9 @@ If those aspects do not matter to you, then you can proceed, I won't stop you.
 
 Some examples of where you may use the Dependency macro over DI:
 * Utility functions
-* Circular dependencies between singletons (although, not recommended)
+* Roact components
+
+It is possible to bypass circular dependency errors using the `Dependency` macro, but this is not recommended and is widely considered an anti-pattern.
 
 ```ts
 const myDependency = Dependency<MyDependency>();

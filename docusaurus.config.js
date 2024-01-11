@@ -10,6 +10,14 @@ module.exports = {
 	organizationName: 'Fireboltofdeath',
 	projectName: 'fireboltofdeath.dev',
 	themeConfig: {
+		announcementBar: {
+			id: 'flamework',
+			content:
+				'This is documentation for Flamework v1.0.0-beta. You can find the v1.0.0 documentation at <a target="_blank" rel="noopener noreferrer" href="https://flamework.fireboltofdeath.dev/">flamework.fireboltofdeath.dev</a>',
+			backgroundColor: '#ffffff',
+			textColor: '#242526',
+			isCloseable: true,
+		},
 		colorMode: {
 			defaultMode: 'dark',
 		},
@@ -100,7 +108,7 @@ module.exports = {
 				docs: {
 					sidebarPath: require.resolve('./sidebars.js'),
 					editUrl:
-					'https://github.com/Fireboltofdeath/docs.fireboltofdeath.dev/tree/master/',
+						'https://github.com/Fireboltofdeath/docs.fireboltofdeath.dev/tree/master/',
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
